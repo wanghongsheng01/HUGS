@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG" />
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG" />
+  <meta property="og:url" content="URL OF THE WEBSITE" />
+  <meta property="og:image" content="assets/static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <meta name="twitter:image" content="assets/static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HUGS</title>
+  <link rel="icon" type="image/x-icon"
+    href="assets/static/images/standing-human-body-silhouette.png">
+  <!-- <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet"> -->
+  <link rel="stylesheet" href="assets/static/css/bulma.min.css">
+  <link rel="stylesheet" href="assets/static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="assets/static/css/bulma-slider.min.css">
+  <!-- <link rel="stylesheet" href="assets/static/css/fontawesome.all.min.css"> -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="assets/static/css/index.css">
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="assets/static/js/fontawesome.all.min.js"></script>
+  <script src="assets/static/js/bulma-carousel.min.js"></script>
+  <script src="assets/static/js/bulma-slider.min.js"></script>
+  <script src="assets/static/js/index.js"></script>
+</head>
+
+<body>
+  <!--some informations about paper-->
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <!--1_this is title-->
+            <h1 class="title is-1 publication-title">
+              Gaussian Control with Hierarchical Semantic Graphs in 3D Human Recovery
+            </h1>
+            <h1 style="font-size:1.5rem">Hongsheng Wang<sup>1,2</sup>, Weiyue Zhang<sup>2</sup>, Sihao Liu<sup>2</sup>,
+              Xinrui Zhou<sup>2</sup>, Shengyu Zhang<sup>†1</sup>, Fei Wu<sup>1</sup> and Feng Lin<sup>2</sup><br></h1>
+            <br>
+            <span><sup>1</sup> Zhejiang University, China</span> &nbsp &nbsp &nbsp<span><sup>2</sup> Zhejiang Lab,
+              China</span>
+            <!--4_this is information-->
+            <div class="is-size-5 publication-authors">
+              <!--link link and link-->
+              <div class="column has-text-centered">
+                <div class="publication-links">
+                  <span class="link-block">
+                    <a href="https://github.com/3DHumanRehab/SemanticGraph-Gaussian" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fab fa-github"></i>
+                      </span>
+                      <span>Code</span>
+                    </a>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--some introduction about paper-->
+  <section class="hero teaser">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <img src="assets/static/images/first.png" id="tree" autoplay controls muted loop
+          height="100%" alt="Teaser Image">
+        <h2 class="subtitle">
+          Human Gaussian Control with Hierarchical Semantic Graphs.
+          (a) is a human Gaussian point cloud with semantic labels.
+          (b) is the rendering output of (a).
+          (c) is the result of our method compared with other methods on the Monocap dataset.
+          LPIPS* = LPIPS × 1000
+        </h2>
+      </div>
+    </div>
+  </section>
+
+  <!--abstract about paper -->
+  <section class="section hero is-light">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              Although 3D Gaussian Splatting (3DGS) has recently made progress in 3D human reconstruction, it primarily
+              relies on 2D pixel-level supervision, overlooking the geometric complexity and topological relationships
+              of different body parts.
+              To address this gap,
+              we introduce the <b>H</b>ierarchical Graph H<b>u</b>man <b>G</b>au<b>s</b>sian Control (HUGS) framework
+              for achieving high-fidelity 3D human reconstruction. Our approach involves leveraging explicitly semantic
+              priors of body parts to ensure the consistency of geometric topology,
+              thereby enabling the capture of the complex geometrical and topological associations among body parts.
+              Additionally, we disentangle high-frequency features from global human features to refine surface details
+              in body parts. Extensive experiments demonstrate that our method exhibits superior performance in human
+              body reconstruction,
+              particularly in enhancing surface details and accurately reconstructing body part junctions.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pipeline about paper-->
+  <section class="hero Pipeline" style="margin-top: 50px;">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <h1 class="title has-text-centered">Pipeline</h1>
+        <img src="assets/static/images/pipeline.png" id="tree" autoplay controls muted loop
+          height="100%" alt="Pipeline Image">
+        <h2 class="subtitle">
+          <b>HUGS framework.</b>
+          We introduce Human Gaussian Control with Hierarchical Semantic Graphs as a method for generating Gaussian
+          humans,
+          ensuring both realistic human appearance and anatomical structure.
+        </h2>
+      </div>
+    </div>
+  </section>
+
+  <section class="hero is-small is-light">
+    <!--head about this section-->
+    <div class="hero-body">
+      <div class="container">
+        <h2 class="title is-3">Training View Results</h2>
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); grid-gap: 20px; text-align: center;">
+              <div><strong>GT</strong></div>
+              <div><strong>Ours</strong></div>
+              <div><strong>InstantNvr</strong></div>
+            </div>
+          </div>
+        </div>
+        <!--vedio vedio and vedio-->
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <div class="novel-view-video" style="display: grid; grid-template-columns: repeat(3, 1fr); grid-gap: 20px;">
+              <video width="100%" height="auto" controls autoplay loop muted>
+                <source src="assets/static/videos/377_gt.mp4" type="video/mp4">
+              </video>
+              <video width="100%" height="auto" controls autoplay loop muted>
+                <source src="assets/static/videos/377_ours.mp4" type="video/mp4">
+              </video>
+              <video width="100%" height="auto" controls autoplay loop muted>
+                <source src="assets/static/videos/377_instant.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+        </div>
+        <!--vedio vedio and vedio-->
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <div class="novel-view-video" style="display: grid; grid-template-columns: repeat(3, 1fr); grid-gap: 20px;">
+              <video width="100%" height="auto" controls autoplay loop muted>
+                <source src="assets/static/videos/392_gt.mp4" type="video/mp4">
+              </video>
+              <video width="100%" height="auto" controls autoplay loop muted>
+                <source src="assets/static/videos/392_ours.mp4" type="video/mp4">
+              </video>
+              <video width="100%" height="auto" controls autoplay loop muted>
+                <source src="assets/static/videos/392_instant.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+        </div>
+
+        <!--vedio vedio and vedio-->
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <div class="novel-view-video" style="display: grid; grid-template-columns: repeat(3, 1fr); grid-gap: 20px;">
+              <video width="100%" height="auto" controls autoplay loop muted>
+                <source src="assets/static/videos/lan_gt.mp4" type="video/mp4">
+              </video>
+              <video width="100%" height="auto" controls autoplay loop muted>
+                <source src="assets/static/videos/lan_ours.mp4" type="video/mp4">
+              </video>
+              <video width="100%" height="auto" controls autoplay loop muted>
+                <source src="assets/static/videos/lan_instant.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+        </div>
+
+        <!--vedio vedio and vedio-->
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <div class="novel-view-video" style="display: grid; grid-template-columns: repeat(3, 1fr); grid-gap: 20px;">
+              <video width="100%" height="auto" controls autoplay loop muted>
+                <source src="assets/static/videos/marc_gt.mp4" type="video/mp4">
+              </video>
+              <video width="100%" height="auto" controls autoplay loop muted>
+                <source src="assets/static/videos/marc_ours.mp4" type="video/mp4">
+              </video>
+              <video width="100%" height="auto" controls autoplay loop muted>
+                <source src="assets/static/videos/marc_instant.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+            <p>
+              This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template"
+                target="_blank">Academic Project Page Template</a> which was adopted from the <a
+                href="https://nerfies.github.io" target="_blank">Nerfies</a> project
+              page. You are free to borrow the of this website, we just ask that you link back to this page in the
+              footer. <br> This website is licensed under a <a rel="license"
+                href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+                Commons Attribution-ShareAlike 4.0 International License</a>.
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
