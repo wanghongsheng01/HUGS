@@ -17,8 +17,7 @@
   <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HUGS</title>
-  <link rel="icon" type="image/x-icon"
-    href="assets/static/images/standing-human-body-silhouette.png">
+  <link rel="icon" type="image/x-icon" href="assets/static/images/standing-human-body-silhouette.png">
   <!-- <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet"> -->
   <link rel="stylesheet" href="assets/static/css/bulma.min.css">
   <link rel="stylesheet" href="assets/static/css/bulma-carousel.min.css">
@@ -46,7 +45,7 @@
               Gaussian Control with Hierarchical Semantic Graphs in 3D Human Recovery
             </h1>
             <h1 style="font-size:1.5rem">Hongsheng Wang<sup>1,2</sup>, Weiyue Zhang<sup>2</sup>, Sihao Liu<sup>2</sup>,
-              Xinrui Zhou<sup>2</sup>, Shengyu Zhang<sup>†1</sup>, Fei Wu<sup>1</sup> and Feng Lin<sup>2</sup><br></h1>
+              Xinrui Zhou<sup>2</sup>, Jing Li<sup>2</sup>, <br>Zhanyun Tang<sup>2</sup>, Shengyu Zhang<sup>†1</sup>, Fei Wu<sup>1</sup> and Feng Lin<sup>2</sup><br></h1>
             <br>
             <span><sup>1</sup> Zhejiang University, China</span> &nbsp &nbsp &nbsp<span><sup>2</sup> Zhejiang Lab,
               China</span>
@@ -76,14 +75,14 @@
   <section class="hero teaser">
     <div class="container is-max-desktop">
       <div class="hero-body">
-        <img src="assets/static/images/first.png" id="tree" autoplay controls muted loop
-          height="100%" alt="Teaser Image">
+        <img src="assets/static/images/first.png" id="tree" autoplay controls muted loop height="100%"
+          alt="Teaser Image">
         <h2 class="subtitle">
           Human Gaussian Control with Hierarchical Semantic Graphs.
           (a) is a human Gaussian point cloud with semantic labels.
           (b) is the rendering output of (a).
           (c) is the result of our method compared with other methods on the Monocap dataset.
-          LPIPS* = LPIPS × 1000
+          LPIPS* = LPIPS × 1000.
         </h2>
       </div>
     </div>
@@ -99,16 +98,14 @@
             <p>
               Although 3D Gaussian Splatting (3DGS) has recently made progress in 3D human reconstruction, it primarily
               relies on 2D pixel-level supervision, overlooking the geometric complexity and topological relationships
-              of different body parts.
-              To address this gap,
-              we introduce the <b>H</b>ierarchical Graph H<b>u</b>man <b>G</b>au<b>s</b>sian Control (HUGS) framework
-              for achieving high-fidelity 3D human reconstruction. Our approach involves leveraging explicitly semantic
-              priors of body parts to ensure the consistency of geometric topology,
-              thereby enabling the capture of the complex geometrical and topological associations among body parts.
-              Additionally, we disentangle high-frequency features from global human features to refine surface details
-              in body parts. Extensive experiments demonstrate that our method exhibits superior performance in human
-              body reconstruction,
-              particularly in enhancing surface details and accurately reconstructing body part junctions.
+              of different body parts. To address this gap, we introduce the <b>H</b>ierarchical Graph H<b>u</b>man
+              <b>G</b>au<b>s</b>sian Control (HUGS) framework for achieving high-fidelity 3D human reconstruction.
+              Our approach involves leveraging explicitly semantic priors of body parts to ensure the consistency of
+              geometric topology, thereby enabling the capture of the complex geometrical and topological associations
+              among body parts. Additionally, we disentangle high-frequency features to refine surface details in body
+              parts. Extensive experiments demonstrate that our method exhibits superior performance in human body
+              reconstruction, particularly in enhancing surface details and accurately reconstructing body part
+              junctions.
             </p>
           </div>
         </div>
@@ -121,8 +118,8 @@
     <div class="container is-max-desktop">
       <div class="hero-body">
         <h1 class="title has-text-centered">Pipeline</h1>
-        <img src="assets/static/images/pipeline.png" id="tree" autoplay controls muted loop
-          height="100%" alt="Pipeline Image">
+        <img src="assets/static/images/pipeline.png" id="tree" autoplay controls muted loop height="100%"
+          alt="Pipeline Image">
         <h2 class="subtitle">
           <b>HUGS framework.</b>
           We introduce Human Gaussian Control with Hierarchical Semantic Graphs as a method for generating Gaussian
@@ -143,7 +140,7 @@
             <div style="display: grid; grid-template-columns: repeat(3, 1fr); grid-gap: 20px; text-align: center;">
               <div><strong>GT</strong></div>
               <div><strong>Ours</strong></div>
-              <div><strong>InstantNvr</strong></div>
+              <div><strong>InstantNVR</strong></div>
             </div>
           </div>
         </div>
